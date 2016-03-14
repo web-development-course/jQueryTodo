@@ -1,0 +1,34 @@
+.todos-list {
+
+}
+
+.todos-item {
+  color: #666;
+
+}
+
+.todos-item-done {
+  float: left;
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: -4px;
+  margin-left: -6px;
+  cursor: pointer;
+}
+
+.todos-item-remove {
+  float: right;
+  font-size: 21px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.todos-item-remove:hover {
+  color: darkred;
+}
+
+.todos-item.completed {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
