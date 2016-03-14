@@ -32,3 +32,8 @@
   text-decoration: line-through;
 }
 
+.todos-item.completed .todos-item-done {
+  color: darkgreen;
+}
+
+
