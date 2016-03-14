@@ -6,16 +6,18 @@
   </div>
   <div class="row">
     <div class="col-lg-offset-3 col-lg-6">
-      <div class="input-group">
-        <input type="text" class="todos-task-input form-control" placeholder="What do you need to do?">
-      <span class="input-group-btn">
-        <button class="todos-add-task btn btn-primary" type="button">Add It!</button>
-      </span>
-      </div>
+      <form action="#">
+        <div class="input-group">
+          <input type="text" class="todos-task-input form-control" placeholder="What do you need to do?">
+          <span class="input-group-btn">
+            <input type="submit" class="todos-add-task btn btn-primary" type="button" value="Add It!" />
+          </span>
+        </div>
+      </form>
       <br/>
       <ul class="todos-list list-group"></ul>
       <ul class="todos-completed list-group"></ul>
-      <div class="btn-group" role="group" aria-label="...">
+      <div class="btn-group" role="group">
         <button type="button" class="btn btn-default todos-clear-completed">Clear Completed</button>
         <button type="button" class="btn btn-default todos-clear-all">Clear All</button>
       </div>

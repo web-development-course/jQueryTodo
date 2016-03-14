@@ -111,11 +111,8 @@ var clearAll = function () {
 };
 
 var clearCompleted = function () {
-  _.forEach(tasks, function(task, idx) {
-    if (task.completed) {
-      tasks.splice(idx, 1);
-    }
-  });
+  _.remove(tasks, function(task) {return task.completed});
+
   saveTasks();
   $('.todos-completed').html('');
 };
@@ -142,9 +139,10 @@ var init = function () {
 
 
 var addStoredTasks = function () {
-  _.forEach(tasks, function(task) {
+  for (var i = 0; i < tasks.length; i++) {
+    var task = tasks[i];
     addTask(task.id, task.text, task.completed);
-  });
+  }
 };
 
 $(function() {
