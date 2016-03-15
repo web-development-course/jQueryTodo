@@ -39,9 +39,9 @@ var removeTask = function () {
   item.slideUp().remove();
 
   var index = item.attr('id');
-  var dbTaskIdx = _.findIndex(tasks, {id: index});
 
-  tasks.splice(dbTaskIdx, 1);
+  _.remove(tasks, function(task) {return task.id == index});
+
   saveTasks();
 };
 
